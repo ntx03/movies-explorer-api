@@ -11,7 +11,7 @@ node_modules
 
 # Optional npm cache directory
 .npm
-.env
+*.env
 
 # Optional REPL history
 .DS_Store
