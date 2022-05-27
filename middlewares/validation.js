@@ -53,9 +53,17 @@ const validationLogin = celebrate({
   }),
 });
 
+// валидируем заголовок id фильма
+const validationParamsDeleteMovie = celebrate({
+  params: ({
+    _id: Joi.string().hex().length(24),
+  }),
+});
+
 module.exports = {
   createMovieValidation,
   updateProfileUserValidation,
   validationLogin,
   createUserValid,
+  validationParamsDeleteMovie,
 };

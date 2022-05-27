@@ -41,7 +41,6 @@ const createMovie = (req, res, next) => {
     movieId,
     owner,
   })
-    // eslint-disable-next-line no-shadow
     .then((movie) => res.status(200).send({ movie }))
     .catch((err) => {
       if (err.code === 11000) {
